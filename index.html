@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Permit Validation</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f2f4f7;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.card{
+    width:520px;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.header{
+    text-align:center;
+    padding:35px 30px 25px;
+}
+
+.success-icon{
+    width:120px;
+    height:120px;
+    border:10px solid #22c55e;
+    border-radius:50%;
+    margin:0 auto 25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.success-icon span{
+    font-size:70px;
+    color:#15803d;
+    font-weight:bold;
+    line-height:1;
+}
+
+.title{
+    font-size:28px;
+    font-weight:700;
+    color:#071a39;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:18px;
+    color:#6b7280;
+}
+
+.details{
+    border-top:1px solid #e5e7eb;
+    padding:25px 30px 35px;
+}
+
+.detail-row{
+    display:flex;
+    margin-bottom:18px;
+    line-height:1.5;
+}
+
+.label{
+    width:160px;
+    color:#4b5563;
+    font-weight:500;
+}
+
+.value{
+    flex:1;
+    color:#374151;
+}
+
+.status{
+    margin-top:25px;
+    font-size:32px;
+    font-weight:700;
+    color:#15803d;
+    letter-spacing:1px;
+}
+
+@media(max-width:600px){
+
+    .card{
+        width:100%;
+    }
+
+    .detail-row{
+        flex-direction:column;
+        gap:4px;
+    }
+
+    .label{
+        width:auto;
+        font-weight:600;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="header">
+
+        <div class="success-icon">
+            <span>✓</span>
+        </div>
+
+        <h1 class="title">Permit is Valid</h1>
+        <p class="subtitle">Successfully verified</p>
+
+    </div>
+
+    <div class="details">
+
+        <div class="detail-row">
+            <div class="label">Business Name:</div>
+            <div class="value">ASEPEDE INVESTMENT CO. LTD</div>
+        </div>
+
+        <div class="detail-row">
+            <div class="label">Business No:</div>
+            <div class="value">CB90287</div>
+        </div>
+
+        <div class="detail-row">
+            <div class="label">Receipt No:</div>
+            <div class="value">RC27874ZDkzat-8</div>
+        </div>
+
+        <div class="detail-row">
+            <div class="label">Amount Paid:</div>
+            <div class="value">Ksh 18200.0</div>
+        </div>
+
+        <div class="detail-row">
+            <div class="label">Permit Year:</div>
+            <div class="value">2026</div>
+        </div>
+
+        <div class="detail-row">
+            <div class="label">Expiry Date:</div>
+            <div class="value">31-12-2026</div>
+        </div>
+
+        <div class="detail-row">
+            <div class="label">Issued By:</div>
+            <div class="value">Peter Nangiro (Pnangiro)</div>
+        </div>
+
+        <div class="detail-row">
+            <div class="label">Permit Type:</div>
+            <div class="value">Original</div>
+        </div>
+
+        <div class="detail-row">
+            <div class="label">Date Issued:</div>
+            <div class="value">11-05-2026</div>
+        </div>
+
+        <div class="status">MATCHED</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
